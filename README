@@ -1,0 +1,46 @@
+This is a simple sender-receiver example in ROS.
+This repository contains the three packages chatter_msgs, chatter_sender
+and chatter_receiver. It mainly serves as a simple case study for the
+meta-ros layer.
+
+MAINTAINER
+  Lukas Bulwahn, BMW Car IT GmbH <lukas.bulwahn@oss.bmw-carit.de>
+
+AUTHORS
+  Lukas Bulwahn, BMW Car IT GmbH <lukas.bulwahn@oss.bmw-carit.de>
+  Daniel Mohr, BMW Car IT GmbH <Daniel.Mohr@bmw-carit.de>
+  Felix Sedlmeier, BMW Car IT GmbH <Felix.Sedlmeier@bmw-carit.de>
+
+
+INSTALLATION and USAGE
+
+On the system, ROS Groovy must be installed.
+To then install and run this example, do the following steps:
+
+1. set up the ROS environment
+   > source /opt/ros/groovy/setup.sh
+
+2. Create a workspace directory in a suitable place
+   > mkdir ws && cd ws
+
+3. Clone this git repository into the workspace's src directory 
+   > git clone https://github.com/bmwcarit/ros_chatter.git src
+
+4. Initialize the catkin workspace in the src directory
+   > catkin_init_workspace src
+
+5. Build and install the chatter example
+   > catkin_make install
+
+6. Setup chatter's shell environment
+   > source ./install/setup.sh
+
+7. Launch the chatter nodes
+   > roslaunch chatter_receiver sender_receiver.launch
+
+
+LICENSE
+
+All files are licensed under the BSD license. Detailed information is in the 
+LICENCE file. This README document is Copyright (C) 2013 BMW Car IT GmbH.
+

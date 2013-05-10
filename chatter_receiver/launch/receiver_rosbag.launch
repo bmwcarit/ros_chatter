@@ -1,0 +1,4 @@
+<launch>
+  <node name="receiver" pkg="chatter_receiver" type="chatter_receiver" respawn="true" required="false" output="screen" cwd="node" />
+  <node name="rosbag" pkg="rosbag" type="play" args="test.bag" required="true" />
+</launch>

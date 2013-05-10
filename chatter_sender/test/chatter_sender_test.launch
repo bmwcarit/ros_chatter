@@ -1,0 +1,10 @@
+<launch>
+
+  <node name="sender" pkg="chatter_sender" type="chatter_sender" respawn="true" required="false" output="screen" cwd="node" >
+    <param name="send_frequency" type="double" value="0.05" />
+    <param name="msg_string" type="string" value="Hello World" />
+  </node>
+
+  <test test-name="chatter_sender_test" pkg="chatter_sender" type="chatter_sender_test" time-limit="5.0" />
+
+</launch>

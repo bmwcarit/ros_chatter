@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <name>chatter_msgs</name>
+  <version>1.0.0</version>
+  <description>The chatter_msgs package</description>
+  <maintainer email="lukas.bulwahn@oss.bmw-carit.de">Lukas Bulwahn</maintainer>
+  <license>BSD</license>
+
+  <author email="Daniel.Mohr@bmw-carit.de">Daniel Mohr</author>
+  <author email="Felix.Sedlmeier@bmw-carit.de">Felix Sedlmeier</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+</package>
