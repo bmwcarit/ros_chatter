@@ -3,12 +3,13 @@ project(chatter_receiver)
 
 find_package(catkin REQUIRED COMPONENTS chatter_msgs roscpp)
 
-generate_messages(DEPENDENCIES chatter_msgs)
 catkin_package()
 
 include_directories(${catkin_INCLUDE_DIRS})
 
 add_executable(chatter_receiver src/chatter_receiver_node.cpp src/Receiver.cpp)
+
+add_dependencies(chatter_receiver chatter_msgs_gencpp)
 
 target_link_libraries(chatter_receiver
   ${catkin_LIBRARIES}
