@@ -38,6 +38,9 @@ To then install and run this example, do the following steps:
 7. Launch the chatter nodes
    > roslaunch chatter_receiver sender_receiver.launch
 
+To run the test, follow step 1 to 4 and then:
+   > catkin_make run_tests
+
 
 LICENSE
 
