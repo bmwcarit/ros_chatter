@@ -15,7 +15,9 @@ target_link_libraries(chatter_sender
    ${catkin_LIBRARIES}
 )
 
-add_subdirectory(test)
+if(CATKIN_ENABLE_TESTING)
+  add_subdirectory(test)
+endif()
 
 install(TARGETS ${PROJECT_NAME}
    ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}

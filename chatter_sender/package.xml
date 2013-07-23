@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>chatter_sender</name>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <description>The chatter_sender package</description>
   <maintainer email="lukas.bulwahn@oss.bmw-carit.de">Lukas Bulwahn</maintainer>
   <license>BSD</license>
@@ -9,7 +9,7 @@
   <author email="Daniel.Mohr@bmw-carit.de">Daniel Mohr</author>
   <author email="Felix.Sedlmeier@bmw-carit.de">Felix Sedlmeier</author>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend version_gte="0.5.68">catkin</buildtool_depend>
   <build_depend>catkin_msgs</build_depend>
   <build_depend>roscpp</build_depend>
   <run_depend>catkin_msgs</run_depend>
