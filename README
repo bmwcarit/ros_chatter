@@ -14,11 +14,11 @@ AUTHORS
 
 INSTALLATION and USAGE
 
-On the system, ROS Groovy must be installed.
+On the system, ROS Hydro must be installed.
 To then install and run this example, do the following steps:
 
 1. set up the ROS environment
-   > source /opt/ros/groovy/setup.sh
+   > source /opt/ros/hydro/setup.sh
 
 2. Create a workspace directory in a suitable place
    > mkdir ws && cd ws
