@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(chatter_sender)
 
-find_package(catkin REQUIRED COMPONENTS chatter_msgs roscpp rostest)
+find_package(catkin REQUIRED COMPONENTS chatter_msgs roscpp)
 
 catkin_package()
 
@@ -16,6 +16,7 @@ target_link_libraries(chatter_sender
 )
 
 if(CATKIN_ENABLE_TESTING)
+  find_package(rostest)
   add_subdirectory(test)
 endif()
 
